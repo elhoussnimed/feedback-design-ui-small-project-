@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack UI Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="feedback-select parent">
+        <h2>How satisfied are you with our customer support performance?</h2>
+        <div class="feedbacks">
+            <div class="feedback" data-name="unhappy" data-color="red">
+                <i class="fa-regular fa-face-angry"></i>
+                <h5>unhappy</h5>
+            </div>
+            <div class="feedback" data-name="neutral" data-color="#f57c00">
+                <i class="fa-regular fa-face-meh"></i>
+                <h5>neutral</h5>
+            </div>
+            <div class="feedback" data-name="happy" data-color="green">
+                <i class="fa-regular fa-face-smile-beam"></i>
+                <h5>happy</h5>
+            </div>
+        </div>
+        <button class="btn" type="submit">send review</button>
+    </div>
+    <div class="feedback-result parent">
+        <i class="fa-solid fa-heart heart"></i>
+        <h4>thank you!</h4>
+        <div class="feedback-choose">
+            <h5>feedback :</h5>
+            <span></span>
+        </div>
+        <p>We'll use your feedback to improve our customer support</p>
+    </div>
+</body>
+
+</html>
