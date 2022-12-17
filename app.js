@@ -33,5 +33,6 @@ submitBtn.addEventListener("click", () => {
   setTimeout(() => {
     feedbackResult.style.display = "none";
     feedbackSelect.style.display = "block";
+    feedbacks.forEach((feedback) => feedback.classList.remove("selected"));
   }, 4000);
 });
